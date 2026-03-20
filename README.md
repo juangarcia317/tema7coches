@@ -74,7 +74,7 @@ Pasos sugeridos dentro del método:
 
 ---
 
-## 🚀 Cómo empezar (clone del repositorio plantilla)
+## 🚀 Cómo empezar
 
 ### Requisitos previos
 
@@ -83,16 +83,20 @@ Pasos sugeridos dentro del método:
 - Eclipse con Git Bash integrado
 - Cuenta de GitHub
 
-### Paso 1 — Crear tu repositorio en GitHub
+### Paso 1 — Crear tu repositorio desde la plantilla
 
-1. Entra en [github.com](https://github.com) y haz login
-2. Pulsa **New repository**
-3. Nómbralo `tema7coches`
-4. Márcalo como **privado**
-5. **No** marques ninguna opción de inicialización (sin README, sin .gitignore)
-6. Pulsa **Create repository** y copia la URL
+1. Entra en la página del repositorio plantilla en GitHub
+2. Pulsa el botón verde **Use this template** → **Create a new repository**
 
-### Paso 2 — Clonar la plantilla del profesor
+   ![Use this template](https://docs.github.com/assets/cb-76823/mw-1440/images/help/repository/use-this-template-button.webp)
+
+3. Ponle de nombre `tema7coches`
+4. Márcalo como **privado** (Private)
+5. Pulsa **Create repository**
+
+Tu repositorio ya tiene todos los ficheros de la plantilla y está listo para trabajar.
+
+### Paso 2 — Clonar tu repositorio en local
 
 Abre **Git Bash** en Eclipse (`Window` → `Show View` → `Terminal`) y navega a tu workspace:
 
@@ -100,21 +104,16 @@ Abre **Git Bash** en Eclipse (`Window` → `Show View` → `Terminal`) y navega 
 cd /c/Users/TuNombre/eclipse-workspace
 ```
 
-Clona el repositorio plantilla:
+Clona **tu** repositorio (no el del profesor):
 
 ```bash
-git clone https://github.com/USUARIO_PROFESOR/tema7coches.git
+git clone https://github.com/TU_USUARIO/tema7coches.git
 cd tema7coches
 ```
 
-### Paso 3 — Apuntar tu copia a tu propio repositorio
+Si GitHub te pide credenciales, usa tu usuario y tu **token de acceso personal** como contraseña (no tu contraseña de GitHub).
 
-```bash
-git remote remove origin
-git remote add origin https://github.com/TU_USUARIO/tema7coches.git
-```
-
-### Paso 4 — Importar el proyecto en Eclipse
+### Paso 3 — Importar el proyecto en Eclipse
 
 1. `File` → `Import`
 2. `Maven` → `Existing Maven Projects` → `Next`
@@ -124,7 +123,7 @@ git remote add origin https://github.com/TU_USUARIO/tema7coches.git
 
 Espera a que Maven descargue las dependencias (barra de progreso abajo).
 
-### Paso 5 — Implementar los TODOs
+### Paso 4 — Implementar los TODOs
 
 Abre las clases indicadas en la sección **Tareas** y completa el código.
 
