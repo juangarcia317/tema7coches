@@ -7,7 +7,7 @@ import tema7coches.model.Coche;
 import tema7coches.util.Utilidades;
 
 public class CocheTest {
-	final static String RUTA_FICH = "src\\main\\resorces\\";
+	final static String RUTA_FICH = "src\\main\\resources\\";
 	public static void main(String[] args) {
 		List<Coche> listaCoches = Utilidades.fromFich2Json( RUTA_FICH+"coches.json",Coche[].class);
 		// TODO 
